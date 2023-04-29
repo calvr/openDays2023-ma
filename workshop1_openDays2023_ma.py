@@ -404,6 +404,30 @@ for i, k in zip(weibPerSector.index, wsInSectors.groups.keys()):
 
 print(weibPerSector)
 
+print(f"""
+the sum of yield per sector is {weibPerSector['yield'].sum():g} kWh
+however this differs from the global yield, {yieldV80:g} kWh
+
+Why?
+""")
+
+print("""
+The yield per sector should be dependent on:
+* the probability bins given by the Weibull distributions for each sector
+* the probability associated with the frequency of occurrence for each sector
+
+so we need to multiply the previously computed yield with the frequency, for each sector!
+""")
+weibPerSector.loc[:,'frequency'] =  frequency.values
+weibPerSector.loc[:,'yield'] = weibPerSector['frequency'] * weibPerSector['yield']
+
+print(f"""
+sum of yield per sector = {weibPerSector['yield'].sum():g} kWh
+whereas global yield = {yieldV80:g} kWh
+""")
+
+print(weibPerSector)
+
 
 ## Plot yield rose
 with plt.xkcd():
@@ -422,7 +446,6 @@ with plt.xkcd():
     #ax.yaxis.grid(color='k', linestyle='--', lw=.5, alpha=0.5)
     plt.gcf().tight_layout(pad=0.5, h_pad=None, w_pad=None, rect=None)
     plt.show()
-
 
 
 
