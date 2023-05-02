@@ -12,7 +12,7 @@ The objectives of this workshop are:
 * Compute a wind-turbine yield by applying its power curve to the climate.
 * Expand the analysis to consider sector-wise variations of the climate.
 
-<style>td, th { border: 1px solid white; border-collapse: collapse; } </style><table align="left"> <tr> <th>Run the tutorial via free cloud platforms: </th> <th><a href="https://colab.research.google.com/github/calvr/openDays2023-ma/blob/main/openDays_workshop1.ipynb"> <img src = "https://colab.research.google.com/assets/colab-badge.svg" alt = "Colab"></th> </tr></table>
+Run the tutorial via free cloud platforms: <a href="https://colab.research.google.com/github/calvr/openDays2023-ma/blob/main/openDays_workshop1.ipynb"> <img src = "https://colab.research.google.com/assets/colab-badge.svg" alt = "Colab">
 
 
 ## Acknoledgements on datasets
