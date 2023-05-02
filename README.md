@@ -1,5 +1,19 @@
 # openDays2023-ma
+
 Notebook and data for OpenDays2023 workshop - M&amp;A
+
+## Workshops
+
+### Workshop 1: Estimate Wind Turbine production under a given climate
+
+The objectives of this workshop are:
+
+* Demonstrate how to read and process a meteorological time series so to get a climate.
+* Compute a wind-turbine yield by applying its power curve to the climate.
+* Expand the analysis to consider sector-wise variations of the climate.
+
+<style>td, th { border: 1px solid white; border-collapse: collapse; } </style><table align="left"> <tr> <th>Run the tutorial via free cloud platforms: </th> <th><a href="https://colab.research.google.com/github/calvr/openDays2023-ma/blob/main/openDays_workshop1.ipynb"> <img src = "https://colab.research.google.com/assets/colab-badge.svg" alt = "Colab"></th> </tr></table>
+
 
 ## Acknoledgements on datasets
 
